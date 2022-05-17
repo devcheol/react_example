@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "concurrently": "^7.1.0"
+  },
+  "name": "reactexpress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "server": "cd server && nodemon server",
+    "client": "cd client && npm start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
